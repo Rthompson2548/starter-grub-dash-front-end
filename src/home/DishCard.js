@@ -2,7 +2,7 @@ import React from "react";
 
 function DishCard({ dish, children }) {
   return (
-    <div className="col-sm-12 col-md-6 col-lg-3 my-2">
+    <div className="col-sm-12 col-md-6 col-lg-4 my-2">
       <div className="card">
         <img
           src={dish.image_url}

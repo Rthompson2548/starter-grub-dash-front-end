@@ -5,3 +5,7 @@
 .badge-pill {
   vertical-align: top;
 }
+
+.container {
+  max-width: 90%;
+}

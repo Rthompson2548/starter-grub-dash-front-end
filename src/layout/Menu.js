@@ -12,7 +12,7 @@ function Menu({ cartCount }) {
     : "nav-item";
 
   return (
-    <div className="bg-light mb-2">
+    <div className="bg-light">
       <nav className="container navbar navbar-expand-lg navbar-light bg-light">
         <button
           className="navbar-toggler"
