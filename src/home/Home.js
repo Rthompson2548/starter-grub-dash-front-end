@@ -18,9 +18,11 @@ function Home({ addToCart }) {
 
   const cards = dishes.map((dish) => (
     <DishCard key={dish.id} dish={dish}>
-      <button className="btn btn-primary" onClick={() => addToCart(dish)}>
-        <span className="oi oi-plus" /> Add to cart
+      <div class="text-center">
+      <button className="btn btn-success px-3 pb-1 pt-2 my-3" onClick={() => addToCart(dish)}>
+       <h5>Add to cart</h5>
       </button>
+      </div>
     </DishCard>
   ));
 
