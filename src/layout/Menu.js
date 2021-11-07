@@ -29,21 +29,21 @@ function Menu({ cartCount }) {
           <ul className="navbar-nav mr-auto">
             <li className={homeClass}>
               <Link className="nav-link" to="/">
-                <span className="oi oi-home" /> Home
+                <span className="oi oi-home" style={{fontSize: "50px"}} /> 
               </Link>
             </li>
             <li className={dashboardClass}>
               <Link className="nav-link" to="/dashboard">
-                <span className="oi oi-dollar" /> Dashboard
+              <span class="oi oi-dashboard" style={{fontSize: "50px", color: "black", marginTop: "5px"}}></span> 
               </Link>
             </li>
           </ul>
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/orders/new">
-                <span className="oi oi-cart fs-2" />
-                &nbsp;Cart&nbsp;
-                <span className="badge badge-pill badge-dark">
+                <span className="oi oi-cart" style={{fontSize: "50px", color: "black"}} />
+               
+                <span className="badge badge-pill badge-dark ml-1">
                   {cartCount || 0}
                 </span>
               </Link>

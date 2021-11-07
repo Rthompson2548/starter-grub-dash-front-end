@@ -19,7 +19,7 @@ function Home({ addToCart }) {
   const cards = dishes.map((dish) => (
     <DishCard key={dish.id} dish={dish}>
       <div class="text-center">
-      <button className="btn btn-success px-3 pb-1 pt-2 my-3" onClick={() => addToCart(dish)}>
+      <button className="btn btn-success px-3 pb-1 pt-2 my-2" onClick={() => addToCart(dish)}>
        <h5>Add to cart</h5>
       </button>
       </div>
