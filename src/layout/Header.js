@@ -11,10 +11,10 @@ function Header() {
   return (
     <div className="jumbotron jumbotron-fluid text-white mb-0" style={style}>
       <div className="container">
-        <h1 className="display-1">GrubDash</h1>
-        <p className="lead">
-          The best restaurants near you deliver with <em>GrubDash</em>!
-        </p>
+        <h1 className="display-1 font-weight-bold">GrubDash</h1>
+        <h3 className="lead font-weight-normal ml-2">
+          Find the best restaurants near you
+        </h3>
       </div>
     </div>
   );
