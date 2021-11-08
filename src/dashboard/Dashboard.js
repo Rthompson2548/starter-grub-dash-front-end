@@ -35,10 +35,10 @@ function Dashboard() {
         <td>
           <Link
             to={`/orders/${order.id}/edit`}
-            className="btn btn-secondary"
+            className="btn btn-primary"
             title="Edit Order"
           >
-            <span className="oi oi-pencil" /> Edit
+            <span className="oi oi-pencil" /> 
           </Link>
         </td>
       </tr>
@@ -55,10 +55,10 @@ function Dashboard() {
         <td>
           <Link
             to={`/dishes/${dish.id}/edit`}
-            className="btn btn-secondary"
+            className="btn btn-primary"
             title="Edit Order"
           >
-            <span className="oi oi-pencil" /> Edit
+            <span className="oi oi-pencil" /> 
           </Link>
         </td>
       </tr>
@@ -67,17 +67,13 @@ function Dashboard() {
 
   return (
     <main>
-      <h1>Dashboard</h1>
-      <p className="text-muted">
-        Eventually, dashboard will not be visible to all users; after login is
-        added.
-      </p>
+      <h1 class="my-4 font-weight-bold">Dashboard</h1>
       <hr />
       <div className="row">
         <div className="col-md-12 col-lg-12 col-sm-12">
           <div className="white-box">
             <div className="d-md-flex mb-3">
-              <h4 className="box-title mb-0">Orders</h4>
+              <h2 className="box-title mb-0">Orders</h2>
             </div>
             <ErrorAlert error={ordersError} />
             <div className="table-responsive">
@@ -97,19 +93,16 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <hr />
+
       <div className="row">
         <div className="col-md-12 col-lg-12 col-sm-12">
           <div className="white-box">
-            <div className="d-md-flex mb-3">
-              <h4 className="box-title mb-0">Dishes</h4>
+            <div className="d-md-flex my-3">
+              <h2 className="box-title mb-0">Dishes</h2>
             </div>
             <ErrorAlert error={dishesError} />
-            <Link to="/dishes/new" className="btn btn-primary mr-2">
-              <span className="oi oi-plus" /> Create Dish
-            </Link>
             <div className="table-responsive">
-              <table className="table no-wrap">
+              <table className="table no-wrap my-4">
                 <thead>
                   <tr>
                     <th className="border-top-0">#</th>
@@ -120,6 +113,11 @@ function Dashboard() {
                 </thead>
                 <tbody>{DishesList}</tbody>
               </table>
+              <div className="d-flex justify-content-end mb-5">
+                <Link to="/dishes/new" className="btn btn-success mr-2">
+                  <span className="oi oi-plus my-2 mr-1" style={{ fontSize: "20px" }} /> New Dish
+                </Link>
+              </div>
             </div>
           </div>
         </div>
