@@ -30,7 +30,7 @@ function Dashboard() {
         <td>{index + 1}</td>
         <td>{order.deliverTo}</td>
         <td>{order.mobileNumber}</td>
-        <td>$ {total}</td>
+        <td>${total}</td>
         <td>{order.status}</td>
         <td>
           <Link
@@ -38,7 +38,7 @@ function Dashboard() {
             className="btn btn-primary"
             title="Edit Order"
           >
-            <span className="oi oi-pencil" /> 
+            <span className="oi oi-pencil my-1" /> 
           </Link>
         </td>
       </tr>
@@ -51,14 +51,14 @@ function Dashboard() {
         <td>{index + 1}</td>
         <td>{dish.name}</td>
         <td>{dish.description}</td>
-        <td>$ {dish.price}</td>
+        <td>${dish.price}</td>
         <td>
           <Link
             to={`/dishes/${dish.id}/edit`}
             className="btn btn-primary"
             title="Edit Order"
           >
-            <span className="oi oi-pencil" /> 
+            <span className="oi oi-pencil my-1" /> 
           </Link>
         </td>
       </tr>
@@ -102,7 +102,7 @@ function Dashboard() {
             </div>
             <ErrorAlert error={dishesError} />
             <div className="table-responsive">
-              <table className="table no-wrap my-4">
+              <table className="table no-wrap my-3">
                 <thead>
                   <tr>
                     <th className="border-top-0">#</th>
@@ -114,8 +114,8 @@ function Dashboard() {
                 <tbody>{DishesList}</tbody>
               </table>
               <div className="d-flex justify-content-end mb-5">
-                <Link to="/dishes/new" className="btn btn-success mr-2">
-                  <span className="oi oi-plus my-2 mr-1" style={{ fontSize: "20px" }} /> New Dish
+                <Link to="/dishes/new" className="btn btn-success mr-3">
+                  <span className="oi oi-plus my-2 mx-1" style={{ fontSize: "20px" }} />
                 </Link>
               </div>
             </div>

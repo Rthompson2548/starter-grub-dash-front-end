@@ -92,7 +92,13 @@ function OrderForm({
           </div>
         )}
         <div className="form-group">
-          <label htmlFor="deliverTo">Delivery address</label>
+          <label
+            htmlFor="deliverTo"
+            className="my-3 font-weight-bold"
+            style={{ fontSize: "30px" }}
+          >
+            Delivery address
+          </label>
           <input
             type="text"
             className="form-control"
@@ -100,13 +106,19 @@ function OrderForm({
             name="deliverTo"
             required={true}
             value={order.deliverTo}
-            placeholder="Enter the delivery address"
+            placeholder="Enter your delivery address"
             disabled={readOnly}
             onChange={changeHandler}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="deliverTo">Mobile Number</label>
+          <label
+            htmlFor="deliverTo"
+            className="my-3 font-weight-bold"
+            style={{ fontSize: "30px" }}
+          >
+            Mobile Number
+          </label>
           <input
             type="text"
             className="form-control"
@@ -119,23 +131,10 @@ function OrderForm({
             onChange={changeHandler}
           />
         </div>
-
-        <div className="form-row">
-          <div className="col-md-2 col-lg-1">Quantity</div>
-          <div className="col">Description</div>
-          <div className="col-md-2 col-lg-1">Price</div>
-          <div className="col-md-2 col-lg-1">Total</div>
-          {readOnly === false && (
-            <div className="col-auto">
-              <span className="oi oi-trash m-2" />
-              &nbsp;
-            </div>
-          )}
-        </div>
         {dishes}
-        <div className="form-row">
+        <div className="form-row mt-5">
           <h3>
-            <span className="text-muted">Total:</span> $ {total}.00
+            <span className="font-weight-bold">Total: ${total}</span>
           </h3>
         </div>
       </fieldset>
