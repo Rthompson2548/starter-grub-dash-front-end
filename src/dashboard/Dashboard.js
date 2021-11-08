@@ -114,7 +114,7 @@ function Dashboard() {
                 <tbody>{DishesList}</tbody>
               </table>
               <div className="d-flex justify-content-end mb-5">
-                <Link to="/dishes/new" className="btn btn-success mr-3">
+                <Link to="/dishes/new" className="btn btn-success">
                   <span className="oi oi-plus my-2 mx-1" style={{ fontSize: "20px" }} />
                 </Link>
               </div>
