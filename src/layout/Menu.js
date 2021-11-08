@@ -28,7 +28,7 @@ function Menu({ cartCount }) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mr-auto">
             <li className={homeClass}>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" style={{ color: "black" }} to="/">
                 <span className="oi oi-home" style={{fontSize: "50px"}} /> 
               </Link>
             </li>
@@ -41,9 +41,9 @@ function Menu({ cartCount }) {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/orders/new">
-                <span className="oi oi-cart" style={{fontSize: "50px", color: "black"}} />
+                <span className="oi oi-cart" style={{fontSize: "50px", color: "black" }} />
                
-                <span className="badge badge-pill badge-dark ml-1">
+                <span className="badge badge-pill badge-dark ml-1" style={{ backgroundColor: "black" }}>
                   {cartCount || 0}
                 </span>
               </Link>

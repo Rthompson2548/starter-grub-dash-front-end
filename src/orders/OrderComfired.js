@@ -30,10 +30,10 @@ function OrderConfirmed() {
       <div className="col-auto">
         <button
           type="button"
-          className="btn btn-secondary mr-2"
+          className="btn btn mr-2"
           onClick={cancelHandler}
         >
-          <span className="oi oi-home" /> Home
+          <span className="oi oi-home" style={{ fontSize: "50px" }} /> Home
         </button>
       </div>
     </OrderForm>
